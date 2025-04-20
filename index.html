@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="fonts/Norse-Bold.otf" as="font" type="font/otf" crossorigin="anonymous" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar with image and logo -->
+    <div class="sidebar">
+      <div class="logo-container">
+        <img src="images/odin-lined.png" alt="Odin Logo" class="logo" />
+        <h1 class="logo-text">ODIN</h1>
+      </div>
+      <p class="credit">Photo by <a href="https://unsplash.com/photos/25xggax4bSA" target="_blank">Halie West</a> on Unsplash</p>
+    </div>
+
+    <!-- Form section -->
+    <div class="form-section">
+      <div class="form-header">
+        <h2>This is not a real online service!</h2>
+        <p>Sign up now to get started.</p>
+      </div>
+
+      <form action="#" method="post" class="sign-up-form">
+        <fieldset>
+          <legend>Let’s do this!</legend>
+          <div class="form-row">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+
+          <div class="form-row">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <div class="form-row">
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" required />
+          </div>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Create Account</button>
+      </form>
+
+      <p class="login-link">Already have an account? <a href="#">Log in</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+/* استيراد خط Norse Bold */
+@font-face {
+    font-family: 'NorseBold';
+    src: url('fonts/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* الشريط الجانبي */
+  .sidebar {
+    flex: 1;
+    background: url('images/background.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .logo-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .logo {
+    height: 80px;
+  }
+  
+  .logo-text {
+    font-family: 'NorseBold', serif;
+    font-size: 48px;
+  }
+  
+  .credit {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .credit a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  /* قسم النموذج */
+  .form-section {
+    flex: 2;
+    background-color: #f9fafb;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .form-header {
+    margin-bottom: 20px;
+  }
+  
+  .form-header h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .sign-up-form {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  fieldset {
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* الحالة عند الخطأ */
+  input:invalid {
+    border-color: red;
+  }
+  
+  /* عند التحديد */
+  input:focus {
+    border-color: blue;
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 0, 255, 0.3);
+  }
+  
+  .submit-btn {
+    background-color: #596d48;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #4e6042;
+  }
+  
+  .login-link {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .login-link a {
+    color: #596d48;
+    font-weight: bold;
+    text-decoration: none;
+  }
